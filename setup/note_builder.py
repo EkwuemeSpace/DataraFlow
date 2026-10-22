@@ -82,7 +82,7 @@ def convert(nbf, md_path: Path, ipynb_path: Path) -> int:
 # --------------------------------------------------------------- main
 def main() -> None:
     args = sys.argv[1:]
-    md_path = Path(args[0]) if args else Path("week_6.md")
+    md_path = Path(args[0]) if args else Path("lesson-note-advanced-sql-numpy-pandas.md")
     ipynb_path = Path(args[1]) if len(args) > 1 else md_path.with_suffix(".ipynb")
 
     if not md_path.exists():
